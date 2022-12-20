@@ -8,15 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+        
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Главная")
+                }
+
+            ProductsView()
+                .tabItem {
+                    Image(systemName: "sofa")
+                    Text("Продукция")
+                }
+            BidView()
+                .tabItem {
+                    Image(systemName: "list.clipboard")
+                    Text("Заявка")
+                }
+            MenuView()
+                .tabItem {
+                    Image(systemName: "line.3.horizontal.circle")
+                    Text("Меню")
+                }
+        }    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -24,3 +42,70 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct HomeView: View {
+    var body: some View {
+        NavigationView {
+            
+            ZStack {
+                Color(Resorces.Colors.background)
+                MainView()
+            }
+            .navigationTitle("Falcon Studio")
+            .navigationBarTitleDisplayMode(.large)
+//            .toolbar {
+//                Button {
+//                }
+//            label: {
+//                
+//                Image("phone.circle.fill")
+//                
+//            }
+//            }
+        }
+        .navigationBarColor(Resorces.Colors.baseRedColor)
+    }
+}
+
+struct ProductsView: View {
+    var body: some View {
+        NavigationView {
+            
+            ZStack {
+                Color(Resorces.Colors.background)
+                //View
+            }
+            .navigationTitle("Продукция")
+            .navigationBarTitleDisplayMode(.inline)
+            
+        }
+    }
+}
+struct BidView: View {
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color(Resorces.Colors.background)
+                //View
+            }
+            .navigationTitle("Заявка")
+            .navigationBarTitleDisplayMode(.inline)
+
+        }
+    }
+}
+struct MenuView: View {
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color(Resorces.Colors.background)
+                //View
+            }
+            .navigationTitle("Меню")
+            .navigationBarTitleDisplayMode(.inline)
+
+        }
+        .background(Color.red)
+    }
+}
+

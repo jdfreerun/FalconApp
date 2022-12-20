@@ -9,16 +9,40 @@
 /* Begin PBXBuildFile section */
 		BB2C17D4294DBF0F008DF6A4 /* FalconAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17D3294DBF0F008DF6A4 /* FalconAppApp.swift */; };
 		BB2C17D6294DBF0F008DF6A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17D5294DBF0F008DF6A4 /* ContentView.swift */; };
-		BB2C17D8294DBF10008DF6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2C17D7294DBF10008DF6A4 /* Assets.xcassets */; };
 		BB2C17DB294DBF10008DF6A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2C17DA294DBF10008DF6A4 /* Preview Assets.xcassets */; };
+		BB2C17E3294DD726008DF6A4 /* Resorces.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17E2294DD726008DF6A4 /* Resorces.swift */; };
+		BB2C17E6294DD781008DF6A4 /* UIColor + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17E5294DD781008DF6A4 /* UIColor + extensions.swift */; };
+		BB2C17E9294DDBE6008DF6A4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17E8294DDBE6008DF6A4 /* MainView.swift */; };
+		BB2C17EB294DED73008DF6A4 /* NavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17EA294DED73008DF6A4 /* NavBarModifier.swift */; };
+		BB2C17EE294DFC0F008DF6A4 /* CategoryStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17ED294DFC0F008DF6A4 /* CategoryStackView.swift */; };
+		BB2C17F1294DFD4E008DF6A4 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17F0294DFD4E008DF6A4 /* CategoryList.swift */; };
+		BB2C17F4294DFD76008DF6A4 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17F3294DFD76008DF6A4 /* CategoryModel.swift */; };
+		BB2C17F9294E0330008DF6A4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17F8294E0330008DF6A4 /* CardView.swift */; };
+		BB2C17FB294E0482008DF6A4 /* CardPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17FA294E0482008DF6A4 /* CardPreviewModel.swift */; };
+		BB2C17FD294E04C4008DF6A4 /* CardDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17FC294E04C4008DF6A4 /* CardDataManager.swift */; };
+		BB2C17FF294E544A008DF6A4 /* BannerStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C17FE294E544A008DF6A4 /* BannerStackView.swift */; };
+		BB2C1801294E59C7008DF6A4 /* DetailProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C1800294E59C7008DF6A4 /* DetailProductView.swift */; };
+		BBDE6694294F5C0B008510AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDE6693294F5C0B008510AE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB2C17D0294DBF0F008DF6A4 /* FalconApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalconApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C17D3294DBF0F008DF6A4 /* FalconAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalconAppApp.swift; sourceTree = "<group>"; };
 		BB2C17D5294DBF0F008DF6A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BB2C17D7294DBF10008DF6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2C17DA294DBF10008DF6A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB2C17E2294DD726008DF6A4 /* Resorces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resorces.swift; sourceTree = "<group>"; };
+		BB2C17E5294DD781008DF6A4 /* UIColor + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + extensions.swift"; sourceTree = "<group>"; };
+		BB2C17E8294DDBE6008DF6A4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BB2C17EA294DED73008DF6A4 /* NavBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarModifier.swift; sourceTree = "<group>"; };
+		BB2C17ED294DFC0F008DF6A4 /* CategoryStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStackView.swift; sourceTree = "<group>"; };
+		BB2C17F0294DFD4E008DF6A4 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		BB2C17F3294DFD76008DF6A4 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		BB2C17F8294E0330008DF6A4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BB2C17FA294E0482008DF6A4 /* CardPreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPreviewModel.swift; sourceTree = "<group>"; };
+		BB2C17FC294E04C4008DF6A4 /* CardDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataManager.swift; sourceTree = "<group>"; };
+		BB2C17FE294E544A008DF6A4 /* BannerStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerStackView.swift; sourceTree = "<group>"; };
+		BB2C1800294E59C7008DF6A4 /* DetailProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductView.swift; sourceTree = "<group>"; };
+		BBDE6693294F5C0B008510AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,7 @@
 		BB2C17C7294DBF0F008DF6A4 = {
 			isa = PBXGroup;
 			children = (
+				BBDE6693294F5C0B008510AE /* Assets.xcassets */,
 				BB2C17D2294DBF0F008DF6A4 /* FalconApp */,
 				BB2C17D1294DBF0F008DF6A4 /* Products */,
 			);
@@ -51,9 +76,12 @@
 		BB2C17D2294DBF0F008DF6A4 /* FalconApp */ = {
 			isa = PBXGroup;
 			children = (
+				BB2C17F2294DFD64008DF6A4 /* Model */,
+				BB2C17EF294DFD2C008DF6A4 /* Data */,
+				BB2C17E7294DDBC5008DF6A4 /* Pages */,
+				BB2C17E1294DD70B008DF6A4 /* Helpers */,
 				BB2C17D3294DBF0F008DF6A4 /* FalconAppApp.swift */,
 				BB2C17D5294DBF0F008DF6A4 /* ContentView.swift */,
-				BB2C17D7294DBF10008DF6A4 /* Assets.xcassets */,
 				BB2C17D9294DBF10008DF6A4 /* Preview Content */,
 			);
 			path = FalconApp;
@@ -65,6 +93,70 @@
 				BB2C17DA294DBF10008DF6A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB2C17E1294DD70B008DF6A4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C17E4294DD756008DF6A4 /* Extensions */,
+				BB2C17E2294DD726008DF6A4 /* Resorces.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BB2C17E4294DD756008DF6A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C17E5294DD781008DF6A4 /* UIColor + extensions.swift */,
+				BB2C17EA294DED73008DF6A4 /* NavBarModifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB2C17E7294DDBC5008DF6A4 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C17EC294DFBF7008DF6A4 /* Views */,
+				BB2C17E8294DDBE6008DF6A4 /* MainView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		BB2C17EC294DFBF7008DF6A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C17F7294E0315008DF6A4 /* Card */,
+				BB2C17ED294DFC0F008DF6A4 /* CategoryStackView.swift */,
+				BB2C17FE294E544A008DF6A4 /* BannerStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB2C17EF294DFD2C008DF6A4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C17F0294DFD4E008DF6A4 /* CategoryList.swift */,
+				BB2C17FC294E04C4008DF6A4 /* CardDataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BB2C17F2294DFD64008DF6A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C17F3294DFD76008DF6A4 /* CategoryModel.swift */,
+				BB2C17FA294E0482008DF6A4 /* CardPreviewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB2C17F7294E0315008DF6A4 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				BB2C17F8294E0330008DF6A4 /* CardView.swift */,
+				BB2C1800294E59C7008DF6A4 /* DetailProductView.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +217,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDE6694294F5C0B008510AE /* Assets.xcassets in Resources */,
 				BB2C17DB294DBF10008DF6A4 /* Preview Assets.xcassets in Resources */,
-				BB2C17D8294DBF10008DF6A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +229,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2C17E3294DD726008DF6A4 /* Resorces.swift in Sources */,
+				BB2C17FF294E544A008DF6A4 /* BannerStackView.swift in Sources */,
+				BB2C17EE294DFC0F008DF6A4 /* CategoryStackView.swift in Sources */,
+				BB2C17FB294E0482008DF6A4 /* CardPreviewModel.swift in Sources */,
+				BB2C17E6294DD781008DF6A4 /* UIColor + extensions.swift in Sources */,
+				BB2C17EB294DED73008DF6A4 /* NavBarModifier.swift in Sources */,
+				BB2C1801294E59C7008DF6A4 /* DetailProductView.swift in Sources */,
 				BB2C17D6294DBF0F008DF6A4 /* ContentView.swift in Sources */,
+				BB2C17FD294E04C4008DF6A4 /* CardDataManager.swift in Sources */,
+				BB2C17E9294DDBE6008DF6A4 /* MainView.swift in Sources */,
 				BB2C17D4294DBF0F008DF6A4 /* FalconAppApp.swift in Sources */,
+				BB2C17F4294DFD76008DF6A4 /* CategoryModel.swift in Sources */,
+				BB2C17F9294E0330008DF6A4 /* CardView.swift in Sources */,
+				BB2C17F1294DFD4E008DF6A4 /* CategoryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +379,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +409,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
