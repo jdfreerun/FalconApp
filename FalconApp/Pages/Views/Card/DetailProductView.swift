@@ -10,21 +10,21 @@ import SwiftUI
 struct DetailProductView: View {
     var body: some View {
         
-            ZStack {
-                Color(Resorces.Colors.background)
-                    .edgesIgnoringSafeArea(.all)
-                ScrollView {
-                    Image("m1")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    
-                    DesriptionView()
-                        .offset(y: -40.0)
-                    
-                }
-                .edgesIgnoringSafeArea(.top)
-
+        ZStack {
+            Color(Resorces.Colors.background)
+                .edgesIgnoringSafeArea(.all)
+            ScrollView {
+                Image("m1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                DesriptionView()
+                    .offset(y: -40.0)
+                
             }
+            .edgesIgnoringSafeArea(.top)
+            
+        }
         
     }
 }
@@ -59,7 +59,7 @@ struct DesriptionView: View {
                 .lineSpacing(8.0)
                 .opacity(0.5)
             HStack(alignment: .top) {
-                   VStack(alignment: .leading) {
+                VStack(alignment: .leading) {
                     Text("Габариты")
                         .fontWeight(.semibold)
                         .padding(.bottom, 2)
@@ -69,7 +69,7 @@ struct DesriptionView: View {
                     Text("Ширина")
                         .opacity(0.5)
                         .padding(.bottom, 1)
-
+                    
                     Text("Высота")
                         .opacity(0.5)
                 }
@@ -82,7 +82,7 @@ struct DesriptionView: View {
                         .opacity(0.5)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-
+                
             }
             .padding(.vertical)
         }

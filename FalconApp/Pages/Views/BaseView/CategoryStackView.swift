@@ -18,8 +18,9 @@ struct CategoryStackView: View {
                     CategoryView(category: Text(item.name))
                 }
             }
-            .padding(.top)
+            .padding(.trailing)
         }
+        .padding(.top)
     }
     
 }

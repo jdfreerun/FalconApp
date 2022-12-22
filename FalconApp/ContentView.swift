@@ -8,34 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @StateObject private var tabController = TabController()
 
     var body: some View {
         
-        TabView {
-            HomeView()
+        TabView(selection: $tabController.activeTab) {
+            MainNavView()
+                .tag(Tab.main)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Главная")
                 }
-
+            
             ProductsView()
+                .tag(Tab.products)
                 .tabItem {
                     Image(systemName: "sofa")
                     Text("Продукция")
                 }
-            BidView()
+            
+            BidNabView()
+                .tag(Tab.bid)
                 .tabItem {
                     Image(systemName: "list.clipboard")
                     Text("Заявка")
                 }
+            
             MenuView()
+                .tag(Tab.menu)
                 .tabItem {
                     Image(systemName: "line.3.horizontal.circle")
                     Text("Меню")
                 }
-        }    }
+        }
+        .environmentObject(tabController)
+    }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -43,25 +52,19 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct HomeView: View {
+
+struct MainNavView: View {
+
     var body: some View {
         NavigationView {
             
             ZStack {
                 Color(Resorces.Colors.background)
-                MainView()
+                MainViewController()
             }
             .navigationTitle("Falcon Studio")
             .navigationBarTitleDisplayMode(.large)
-//            .toolbar {
-//                Button {
-//                }
-//            label: {
-//                
-//                Image("phone.circle.fill")
-//                
-//            }
-//            }
+            //            .toolbar {}
         }
         .navigationBarColor(Resorces.Colors.baseRedColor)
     }
@@ -81,19 +84,7 @@ struct ProductsView: View {
         }
     }
 }
-struct BidView: View {
-    var body: some View {
-        NavigationView {
-            ZStack {
-                Color(Resorces.Colors.background)
-                //View
-            }
-            .navigationTitle("Заявка")
-            .navigationBarTitleDisplayMode(.inline)
 
-        }
-    }
-}
 struct MenuView: View {
     var body: some View {
         NavigationView {
@@ -103,9 +94,12 @@ struct MenuView: View {
             }
             .navigationTitle("Меню")
             .navigationBarTitleDisplayMode(.inline)
-
+            
         }
         .background(Color.red)
     }
 }
+
+
+
 

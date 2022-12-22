@@ -15,7 +15,9 @@ struct BannerStackView: View {
                 ForEach(0..<2) { i in
                     BannerView(imageBanner: "banner\(i)")
                 }
-            }    }
+            }
+            .padding(.trailing)
+        }
     }
 }
 

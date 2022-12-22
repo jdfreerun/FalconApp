@@ -18,7 +18,8 @@ struct CardView: View {
                 .frame(width: 145, height: 110)
                 .cornerRadius(10.0)
             title
-                .frame(width: 145, height: 35, alignment: .top)
+                .frame(width: 145, height: 35)
+                .multilineTextAlignment(.leading)
                 .foregroundColor(Color.black)
                 .font(.system(size: 13))
             
@@ -37,7 +38,7 @@ struct CardView: View {
                     .font(.system(size: 14))
             }
         }
-        .frame(width: 135)
+        .frame(width: 132)
         .padding()
         .background(Color.white)
         .cornerRadius(15.0)
