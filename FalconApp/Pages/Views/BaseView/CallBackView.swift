@@ -32,8 +32,8 @@ struct CallBackView: View {
                             .frame(width: 30, height: 30)
                             .padding()
                     }
-                    .background(Color.white)
-                    .cornerRadius(20)
+                    .background(Color.white.cornerRadius(20))
+                   
 
                 }
                 .foregroundColor(Color(Resorces.Colors.baseRedColor))

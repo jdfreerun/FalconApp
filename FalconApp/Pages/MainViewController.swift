@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainViewController: View {
     let cardItem = CardDataManager.shared.data
-    @State private var showinDetail = false
+    @State var cardDetail: CardModel?
 
     
     var body: some View {
@@ -44,17 +44,25 @@ struct MainViewController: View {
                                             GridItem(),
                                             GridItem()
                                         ]){
-                                            ForEach(cardItem, id: \.self) { item in
+                                            ForEach(self.cardItem, id: \.id) { object in
                                                 Button(action: {
-                                                    showinDetail.toggle()
+                                                    cardDetail = CardModel(
+                                                        id: object.id,
+                                                        image: object.image,
+                                                        title: object.title,
+                                                        price: object.price)
+                                                    
                                                 }) {
                                                     CardView(
-                                                        image: Image(item.image),
-                                                        title: Text(item.title),
-                                                        price: Text("\(item.price) ₽"))
+                                                        image: Image(object.image),
+                                                        title: Text(object.title),
+                                                        price: Text("\(object.price) ₽"))
                                                     
-                                                }.sheet(isPresented: $showinDetail) {
-                                                    DetailProductView()
+                                                }.sheet(item: $cardDetail) {object in
+                                                    DetailProductView(
+                                                        image: Image(object.image),
+                                                        title: Text(object.title),
+                                                        price: Text("\(object.price) ₽"))
                                                 }
                                             }
                                         }
@@ -63,15 +71,6 @@ struct MainViewController: View {
                                    
                                     CreateBidView()
                                         .padding()
-                                    
-//                                    Button {
-//
-//                                    }
-//                                label: {
-//                                    Text("Test")
-//                                }
-//                                .padding()
-                            
                         }
                     }
                 }

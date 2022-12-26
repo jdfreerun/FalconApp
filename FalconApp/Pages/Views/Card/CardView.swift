@@ -11,6 +11,7 @@ struct CardView: View {
     let image: Image
     let title: Text
     let price: Text
+    
     var body: some View {
         VStack {
             image
@@ -27,9 +28,9 @@ struct CardView: View {
                 
                     Image("star")
                 Text("4.9")
-                    .font(.system(size: 12))
+                    .font(.system(size: 14))
                     .foregroundColor(.black)
-                    .padding(.leading, 5)
+                    .padding(.leading, 3)
                 
                 Spacer()
                 

@@ -34,9 +34,8 @@ struct CreateBidView: View {
                 }
                 
                 .foregroundColor(.white)
-                .background(Color(Resorces.Colors.baseRedColor))
+                .background(Color(Resorces.Colors.baseRedColor).cornerRadius(20))
             }
-            .cornerRadius(20)
     }
 }
 

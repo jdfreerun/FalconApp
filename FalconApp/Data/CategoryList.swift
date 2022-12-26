@@ -12,7 +12,7 @@ class CategoryDataManager {
     
     lazy var data: [CategoryModel] = {
         return [
-            CategoryModel(name: "Распродажа"),
+            CategoryModel(name: "Распродажа %"),
             CategoryModel(name: "Гостиная"),
             CategoryModel(name: "Спальня"),
             CategoryModel(name: "Детская"),
