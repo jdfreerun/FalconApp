@@ -10,6 +10,8 @@ import SwiftUI
 struct MainViewController: View {
     let cardItem = CardDataManager.shared.data
     @State var cardDetail: CardModel?
+    
+    @ObservedObject var model = ViewModel()
 
     
     var body: some View {
@@ -44,26 +46,33 @@ struct MainViewController: View {
                                             GridItem(),
                                             GridItem()
                                         ]){
-                                            ForEach(self.cardItem, id: \.id) { object in
-                                                Button(action: {
-                                                    cardDetail = CardModel(
-                                                        id: object.id,
-                                                        image: object.image,
-                                                        title: object.title,
-                                                        price: object.price)
-                                                    
-                                                }) {
-                                                    CardView(
-                                                        image: Image(object.image),
-                                                        title: Text(object.title),
-                                                        price: Text("\(object.price) ₽"))
-                                                    
-                                                }.sheet(item: $cardDetail) {object in
-                                                    DetailProductView(
-                                                        image: Image(object.image),
-                                                        title: Text(object.title),
-                                                        price: Text("\(object.price) ₽"))
-                                                }
+//                                            ForEach(self.cardItem, id: \.id) { object in
+//                                                Button(action: {
+//                                                    cardDetail = CardModel(
+//                                                        id: object.id,
+//                                                        image: object.image,
+//                                                        title: object.title,
+//                                                        price: object.price)
+//
+//                                                }) {
+//                                                    CardView(
+//                                                        image: Image(object.image),
+//                                                        title: Text(object.title),
+//                                                        price: Text("\(object.price) ₽"))
+//
+//                                                }.sheet(item: $cardDetail) {object in
+//                                                    DetailProductView(
+//                                                        image: Image(object.image),
+//                                                        title: Text(object.title),
+//                                                        price: Text("\(object.price) ₽"))
+//                                                }
+//                                            }
+                                            
+                                            
+                                            ForEach(model.productsList) { item in
+                                                CardView(image: Image("m1"),
+                                                         title: Text(item.title),
+                                                         price: Text(item.price))
                                             }
                                         }
                                         .padding(.leading)
@@ -78,6 +87,9 @@ struct MainViewController: View {
         }
     }
     
+    init() {
+        model.getData()
+    }
 }
 
 struct MainView_Previews: PreviewProvider {

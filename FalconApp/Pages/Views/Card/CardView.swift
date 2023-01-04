@@ -16,7 +16,7 @@ struct CardView: View {
         VStack {
             image
                 .resizable()
-                .frame(width: 145, height: 110)
+                .frame(width: 145, height: 120)
                 .cornerRadius(10.0)
             title
                 .frame(width: 145, height: 35)
